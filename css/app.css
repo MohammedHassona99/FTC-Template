@@ -24,6 +24,15 @@ body {
   color: #333333;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 5px;
+}
+
 /* End Global setting */
 /* Start Navbar */
 nav {
@@ -112,5 +121,72 @@ nav .navbar-nav .nav-item .nav-link.active {
   max-width: 100%;
   max-height: 100%;
 }
+.case-studies .control .con span {
+  width: 50px;
+  background-color: #e7e7e7;
+  height: 2px;
+  display: inline-block;
+  position: relative;
+}
+.case-studies .control .con span::before {
+  content: "";
+  position: absolute;
+  background-color: #08546c;
+  width: 50%;
+  height: 2px;
+}
 
-/* End Case Studies *//*# sourceMappingURL=app.css.map */
+/* End Case Studies */
+/* Start Services */
+.services .info {
+  margin-left: 100px;
+  width: 50%;
+}
+.services .info h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  font-size: 15px;
+}
+.services .info h4::after {
+  content: url("./../images/shape-02.png");
+  position: absolute;
+  top: -27px;
+  left: 75px;
+}
+.services .analysis .image img {
+  height: 100%;
+}
+.services .web-development .cycles {
+  position: relative;
+}
+.services .web-development .cycles::before {
+  content: url("./../images/cycle-01.png");
+  position: absolute;
+  top: 145px;
+}
+.services .web-development .cycles::after {
+  content: url("./../images/cycle-02.png");
+  position: absolute;
+  top: 130px;
+  left: 25px;
+}
+.services .web-development .image img {
+  height: 100%;
+}
+.services .design .cycles {
+  position: relative;
+}
+.services .design .cycles::before {
+  content: url("./../images/cycle-01.png");
+  position: absolute;
+  top: 145px;
+}
+.services .design .cycles::after {
+  content: url("./../images/cycle-02.png");
+  position: absolute;
+  top: 130px;
+  left: 25px;
+}
+
+/* End Services *//*# sourceMappingURL=app.css.map */

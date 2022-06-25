@@ -18,7 +18,13 @@ body {
 .text-333 {
   color: #333333;
 }
-
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 5px;
+}
 /* End Global setting */
 /* Start Navbar */
 nav {
@@ -108,13 +114,97 @@ nav {
         left: 108px;
       }
     }
-    
   }
-  .studies{
-    img{
+  .studies {
+    img {
       max-width: 100%;
       max-height: 100%;
     }
   }
+  .control {
+    .con {
+      span {
+        width: 50px;
+        background-color: #e7e7e7;
+        height: 2px;
+        display: inline-block;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: #08546c;
+          width: 50%;
+          height: 2px;
+        }
+      }
+    }
+  }
 }
 /* End Case Studies */
+/* Start Services */
+.services {
+  .info {
+    margin-left: 100px;
+    width: 50%;
+    h4 {
+      text-transform: uppercase;
+      font-weight: 300;
+      position: relative;
+      font-size: 15px;
+      &::after {
+        content: url("./../images/shape-02.png");
+        position: absolute;
+        top: -27px;
+        left: 75px;
+      }
+    }
+  }
+  .analysis {
+    .image {
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .web-development {
+    .cycles {
+      position: relative;
+      &::before {
+        content: url("./../images/cycle-01.png");
+        position: absolute;
+        top: 145px;
+      }
+      &::after {
+        content: url("./../images/cycle-02.png");
+        position: absolute;
+        top: 130px;
+        left: 25px;
+      }
+    }
+
+    .image {
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .design {
+    .cycles {
+      position: relative;
+      &::before {
+        content: url("./../images/cycle-01.png");
+        position: absolute;
+        top: 145px;
+      }
+      &::after {
+        content: url("./../images/cycle-02.png");
+        position: absolute;
+        top: 130px;
+        left: 25px;
+      }
+    }
+  }
+}
+/* End Services */
