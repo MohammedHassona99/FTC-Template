@@ -1,0 +1,120 @@
+/* Global */
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Start Global setting */
+.main-color {
+  color: #08546c;
+}
+.main-bg {
+  background-color: #08546c;
+}
+.main-br {
+  border: 1px solid #08546c;
+}
+.text-15 {
+  font-size: 15px;
+}
+.text-333 {
+  color: #333333;
+}
+
+/* End Global setting */
+/* Start Navbar */
+nav {
+  background-color: rgba($color: #f6f6f2, $alpha: 0.78);
+  height: 70px;
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        transition: 0.3s;
+      }
+      &:hover .nav-link {
+        color: #093047 !important;
+        font-weight: bold;
+      }
+      .nav-link.active {
+        color: #093047;
+        font-weight: bold;
+      }
+    }
+  }
+}
+/* End Navbar */
+/* Start main */
+.landing-page {
+  height: 100vh;
+  margin-top: -70px;
+  .before-column {
+    &::before {
+      content: url("./../images/shape-01.png");
+      position: absolute;
+      top: 150px;
+      left: -42%;
+    }
+  }
+  .info {
+    .our-goal {
+      position: relative;
+      font-weight: 300;
+      color: #9a9b9d;
+      &::after {
+        content: url("./../images/shape-02.png");
+        position: absolute;
+        top: -24px;
+        left: 87px;
+      }
+    }
+    a {
+      width: fit-content;
+    }
+  }
+  .landing-img {
+    img {
+      height: 100%;
+    }
+  }
+}
+/* End main */
+/* Start About */
+.about {
+  background-color: #fafbfc;
+  h4 {
+    font-size: 15px;
+    font-weight: 300;
+    position: relative;
+    &::after {
+      content: url("./../images/shape-02.png");
+      position: absolute;
+      left: 165px;
+      width: 52px;
+      height: 52px;
+      top: 8px;
+    }
+  }
+}
+/* End About*/
+/* Start Case Studies */
+.case-studies {
+  .info {
+    width: 60%;
+    h4 {
+      font-size: 15px;
+      position: relative;
+      &::after {
+        content: url("./../images/shape-02.png");
+        position: absolute;
+        top: -28px;
+        left: 108px;
+      }
+    }
+    
+  }
+  .studies{
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+/* End Case Studies */

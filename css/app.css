@@ -1,0 +1,116 @@
+/* Global */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Start Global setting */
+.main-color {
+  color: #08546c;
+}
+
+.main-bg {
+  background-color: #08546c;
+}
+
+.main-br {
+  border: 1px solid #08546c;
+}
+
+.text-15 {
+  font-size: 15px;
+}
+
+.text-333 {
+  color: #333333;
+}
+
+/* End Global setting */
+/* Start Navbar */
+nav {
+  background-color: rgba(246, 246, 242, 0.78);
+  height: 70px;
+}
+nav .navbar-nav .nav-item .nav-link {
+  transition: 0.3s;
+}
+nav .navbar-nav .nav-item:hover .nav-link {
+  color: #093047 !important;
+  font-weight: bold;
+}
+nav .navbar-nav .nav-item .nav-link.active {
+  color: #093047;
+  font-weight: bold;
+}
+
+/* End Navbar */
+/* Start main */
+.landing-page {
+  height: 100vh;
+  margin-top: -70px;
+}
+.landing-page .before-column::before {
+  content: url("./../images/shape-01.png");
+  position: absolute;
+  top: 150px;
+  left: -42%;
+}
+.landing-page .info .our-goal {
+  position: relative;
+  font-weight: 300;
+  color: #9a9b9d;
+}
+.landing-page .info .our-goal::after {
+  content: url("./../images/shape-02.png");
+  position: absolute;
+  top: -24px;
+  left: 87px;
+}
+.landing-page .info a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.landing-page .landing-img img {
+  height: 100%;
+}
+
+/* End main */
+/* Start About */
+.about {
+  background-color: #fafbfc;
+}
+.about h4 {
+  font-size: 15px;
+  font-weight: 300;
+  position: relative;
+}
+.about h4::after {
+  content: url("./../images/shape-02.png");
+  position: absolute;
+  left: 165px;
+  width: 52px;
+  height: 52px;
+  top: 8px;
+}
+
+/* End About*/
+/* Start Case Studies */
+.case-studies .info {
+  width: 60%;
+}
+.case-studies .info h4 {
+  font-size: 15px;
+  position: relative;
+}
+.case-studies .info h4::after {
+  content: url("./../images/shape-02.png");
+  position: absolute;
+  top: -28px;
+  left: 108px;
+}
+.case-studies .studies img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* End Case Studies *//*# sourceMappingURL=app.css.map */
