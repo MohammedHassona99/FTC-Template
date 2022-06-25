@@ -189,4 +189,62 @@ nav .navbar-nav .nav-item .nav-link.active {
   left: 25px;
 }
 
-/* End Services *//*# sourceMappingURL=app.css.map */
+/* End Services */
+/* Start Contact Us */
+.contact-us {
+  position: relative;
+}
+.contact-us::before {
+  content: url("./../images/cycle-01.png");
+  position: absolute;
+  top: -37px;
+  left: 42px;
+}
+.contact-us::after {
+  content: url("./../images/cycle-02.png");
+  position: absolute;
+  top: -59px;
+  left: 62px;
+}
+.contact-us .box h5 {
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  position: relative;
+}
+.contact-us .box h5::after {
+  content: url("./../images/shape-05.png");
+  position: absolute;
+  top: -27px;
+  left: 160px;
+}
+.contact-us form input[type=text],
+.contact-us form input[type=email],
+.contact-us form input[type=date],
+.contact-us form select {
+  border-bottom: 1px solid #fff !important;
+}
+.contact-us form input[type=text]:focus,
+.contact-us form input[type=email]:focus,
+.contact-us form input[type=date]:focus,
+.contact-us form select:focus {
+  outline: none !important;
+}
+.contact-us form ::-moz-placeholder {
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+}
+.contact-us form :-ms-input-placeholder {
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+}
+.contact-us form ::placeholder {
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* End Contact Us *//*# sourceMappingURL=app.css.map */

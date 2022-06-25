@@ -208,3 +208,54 @@ nav {
   }
 }
 /* End Services */
+
+/* Start Contact Us */
+.contact-us {
+  position: relative;
+  &::before {
+    content: url("./../images/cycle-01.png");
+    position: absolute;
+    top: -37px;
+    left: 42px;
+  }
+  &::after {
+    content: url("./../images/cycle-02.png");
+    position: absolute;
+    top: -59px;
+    left: 62px;
+  }
+
+  .box {
+    h5 {
+      color: white;
+      font-weight: 300;
+      font-size: 15px;
+      text-transform: uppercase;
+      position: relative;
+      &::after {
+        content: url("./../images/shape-05.png");
+        position: absolute;
+        top: -27px;
+        left: 160px;
+      }
+    }
+  }
+  form {
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+      border-bottom: 1px solid #fff !important;
+      &:focus {
+        outline: none !important;
+      }
+    }
+
+    ::placeholder {
+      color: white;
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+}
+/* End Contact Us */
