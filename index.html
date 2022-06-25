@@ -76,14 +76,18 @@
     <section class="landing-page">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-2 position-relative before-column"></div>
-          <div class="info col-5 d-flex flex-column align-self-center">
+          <div class="col-2 position-relative before-column">
+            <div class="image">
+              <img src="./images/cycle-small.png" alt="" />
+            </div>
+          </div>
+          <div class="col-5 info d-flex flex-column align-self-center">
             <div class="our-goal text-muted">OUR GOAL</div>
             <p class="fs-1 fw-bold">
               We Build Products That Connects You With The World.
             </p>
             <a
-              class="text-decoration-none text-white main-bg px-3 py-1 rounded-1 text-15"
+              class="text-decoration-none text-white main-bg px-4 py-1 rounded-1 text-15"
               href="#"
               >GET IN TOUCH</a
             >
@@ -97,7 +101,7 @@
     <!-- End landing -->
 
     <!-- Start About -->
-    <section class="about py-5">
+    <section class="about my-5 py-5">
       <div class="container">
         <h4 class="main-color">Get to Know us</h4>
         <h2 class="main-color mb-0 text-uppercase fw-bold">about us</h2>
@@ -106,7 +110,7 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel turpis
           nunc eget lorem dolor.
         </p>
-        <div class="boxes d-flex text-15 mt-5 gap-3">
+        <div class="boxes d-flex text-15 my-5 gap-3">
           <div class="box">
             Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
             dignissim. Pharetra massa massa ultricies mi quis hendrerit. Tortor
@@ -124,6 +128,9 @@
             nulla. Egestas diam in arcu cursus.
           </div>
         </div>
+        <div class="image py-3">
+          <img src="./images/cycle-01.png" alt="" />
+        </div>
       </div>
     </section>
     <!-- End About -->
@@ -132,9 +139,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-1">
-            <div
-              class="images d-flex flex-column justify-content-start align-content-between"
-            >
+            <div class="images d-flex flex-column">
               <div class="image">
                 <img src="./images/false.png" alt="" />
               </div>
@@ -147,7 +152,8 @@
             <div class="info">
               <h4 class="text-uppercase text-muted">case studies</h4>
               <p class="fw-bold fs-3">
-                Read what we have achieved for our clients
+                Read what we have achieved <br />
+                for our clients
               </p>
             </div>
             <div class="studies d-flex gap-3">
@@ -176,7 +182,7 @@
               </div>
             </div>
           </div>
-          <div class="col-1">3</div>
+          <div class="col-1"></div>
         </div>
       </div>
     </section>
@@ -191,6 +197,7 @@
             Fueled by a deep understanding of the business context.
           </p>
         </div>
+        <!-- Start analysis -->
         <div class="analysis my-5">
           <div class="row">
             <div class="col px-0">
@@ -210,8 +217,9 @@
             </div>
           </div>
         </div>
-
-        <div class="web-development my-5">
+        <!-- End analysis-->
+        <!-- Start Web Development -->
+        <div class="web-development mb-5">
           <div class="row">
             <div class="col-1">
               <div class="cycles"></div>
@@ -233,7 +241,9 @@
             </div>
           </div>
         </div>
-        <div class="mobile-development my-5">
+        <!-- Start Web Development -->
+        <!-- Start Mobile Development -->
+        <div class="mobile-development mb-5">
           <div class="row">
             <div class="col-5 px-0">
               <div class="image">
@@ -253,7 +263,9 @@
             <div class="col-2"></div>
           </div>
         </div>
-        <div class="design my-5">
+        <!-- End Mobile Development -->
+        <!-- Start Design -->
+        <div class="design mb-5">
           <div class="row">
             <div class="col-1">
               <div class="cycles"></div>
@@ -275,6 +287,7 @@
             </div>
           </div>
         </div>
+        <!-- End Design -->
       </div>
     </section>
     <!-- End Services -->
@@ -293,18 +306,20 @@
                 <div class="box pt-5">
                   <h5>request free quote</h5>
                   <p class="text-white fw-bold mb-5">
-                    Got tons of new ideas or you just curiosity mind, and love
-                    to explore?
+                    Got tons of new ideas or you just <br />
+                    curiosity mind, and love to <br />
+                    explore?
                   </p>
                   <p class="text-white fw-bold">
-                    Hit the button we are ready for collabs and new projects!
+                    Hit the button we are ready for collabs <br />
+                    and new projects!
                   </p>
                 </div>
               </div>
               <div
                 class="col d-flex justify-content-center align-content-center"
               >
-                <form action="" class="w-75">
+                <form action="" class="w-75 pt-5">
                   <input
                     class="form-control bg-transparent border-0 mb-2 rounded-0 ps-0"
                     type="text"
@@ -320,16 +335,20 @@
                     placeholder="Email"
                   />
                   <select
-                    class="form-select bg-transparent border-0 mb-2 text-white rounded-0"
+                    class="form-select bg-transparent border-0 mb-2 text-white rounded-0 ps-0"
                     aria-label="Default select example"
                   >
-                    <option selected>Service category</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option class="text-white main-bg" selected>
+                      Service category
+                    </option>
+                    <option class="text-white main-bg" value="1">
+                      premium
+                    </option>
+                    <option class="text-white main-bg" value="2">Pro</option>
+                    <option class="text-white main-bg" value="3">Plus</option>
                   </select>
                   <input
-                    class="form-control bg-transparent rounded-0"
+                    class="form-control bg-transparent rounded-0 border-0 ps-0"
                     type="date"
                     name=""
                     id=""
@@ -354,7 +373,7 @@
     </section>
     <!-- End Contact us-->
     <!-- Start Testimonial -->
-    <div class="section testimonials py-5">
+    <section class="section testimonials py-5">
       <div class="container">
         <h3 class="fw-bold text-center">
           Here’s what some of our <br />
@@ -419,7 +438,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- End Testimonial -->
     <!-- Start Footer -->
     <footer>

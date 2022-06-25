@@ -57,6 +57,14 @@ nav .navbar-nav .nav-item .nav-link.active {
   height: 100vh;
   margin-top: -70px;
 }
+.landing-page .before-column {
+  position: relative;
+}
+.landing-page .before-column .image {
+  position: absolute;
+  bottom: 30%;
+  left: 55%;
+}
 .landing-page .before-column::before {
   content: url("./../images/shape-01.png");
   position: absolute;
@@ -78,9 +86,12 @@ nav .navbar-nav .nav-item .nav-link.active {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  font-weight: 300;
+  font-size: 13px;
 }
 .landing-page .landing-img img {
-  height: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 /* End main */
@@ -101,6 +112,14 @@ nav .navbar-nav .nav-item .nav-link.active {
   height: 52px;
   top: 8px;
 }
+.about .image {
+  position: relative;
+}
+.about .image img {
+  position: absolute;
+  right: 0;
+  top: -35px;
+}
 
 /* End About*/
 /* Start Case Studies */
@@ -115,11 +134,12 @@ nav .navbar-nav .nav-item .nav-link.active {
   content: url("./../images/shape-02.png");
   position: absolute;
   top: -28px;
-  left: 108px;
+  left: 125px;
 }
 .case-studies .studies img {
   max-width: 100%;
   max-height: 100%;
+  cursor: pointer;
 }
 .case-studies .control .con span {
   width: 50px;
@@ -224,12 +244,20 @@ nav .navbar-nav .nav-item .nav-link.active {
 .contact-us form input[type=date],
 .contact-us form select {
   border-bottom: 1px solid #fff !important;
+  color: white;
 }
 .contact-us form input[type=text]:focus,
 .contact-us form input[type=email]:focus,
 .contact-us form input[type=date]:focus,
 .contact-us form select:focus {
-  outline: none !important;
+  box-shadow: none;
+}
+.contact-us form select option {
+  padding: 2px 5px;
+  transition: 0.3s;
+}
+.contact-us form select option:hover {
+  padding-left: 3px;
 }
 .contact-us form ::-moz-placeholder {
   color: white;
