@@ -305,11 +305,14 @@ nav {
   form {
     input[type="email"],
     input[type="password"] {
-      box-shadow: 0 0px 0px;
+      box-shadow: 0 20px 40px rgba($color: #000, $alpha: 0.1);
     }
     ::placeholder {
       padding: 0;
     }
+  }
+  .footer {
+    margin-top: 75px;
   }
 }
 /* End sign in */
