@@ -276,5 +276,29 @@ nav .navbar-nav .nav-item .nav-link.active {
 }
 
 /* End Contact Us */
-/* Start testimonials */
-/* End testimonials *//*# sourceMappingURL=app.css.map */
+/* Start sign in */
+.sign-in {
+  height: 100vh;
+}
+.sign-in .image img {
+  width: 100%;
+  height: 100vh;
+}
+.sign-in .info {
+  margin-top: 150px;
+}
+.sign-in form input[type=email],
+.sign-in form input[type=password] {
+  box-shadow: 0 0px 0px;
+}
+.sign-in form ::-moz-placeholder {
+  padding: 0;
+}
+.sign-in form :-ms-input-placeholder {
+  padding: 0;
+}
+.sign-in form ::placeholder {
+  padding: 0;
+}
+
+/* End sign in *//*# sourceMappingURL=app.css.map */

@@ -288,7 +288,28 @@ nav {
   }
 }
 /* End Contact Us */
-/* Start testimonials */
-.testimonials {
+/* Start sign in */
+.sign-in {
+  height: 100vh;
+
+  .image {
+    img {
+      width: 100%;
+      height: 100vh;
+    }
+  }
+
+  .info {
+    margin-top: 150px;
+  }
+  form {
+    input[type="email"],
+    input[type="password"] {
+      box-shadow: 0 0px 0px;
+    }
+    ::placeholder {
+      padding: 0;
+    }
+  }
 }
-/* End testimonials */
+/* End sign in */
